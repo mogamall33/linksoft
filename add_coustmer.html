@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_div">
+        <div class="nav_bar">
+
+            <div class="icon_links">
+                <a href="/index.html" class="box">
+                    <i class="fa-regular fa-house"></i>
+                </a>
+
+                <a href="/add_coustmer.html" class="box active">
+                    <i class="fa-solid fa-user-plus"></i>
+                </a>
+
+                <a href="/visit.html" class="box">
+                    <i class="fa-solid fa-briefcase"></i>
+                </a>
+
+                <a href="/collection.html" class="box">
+                    <i class="fa-regular fa-calendar-days"></i>
+                </a> 
+
+                <a href="#" class="box">
+                    <i class="fa-regular fa-calendar-plus"></i>
+                </a>
+
+                <a href="#" class="box">
+                    <i class="fa-solid fa-vault"></i>
+                </a>
+
+            </div>
+        </div>
+
+
+        <div class="add_coustmer">
+            <div class="container">
+
+                <div class="header">
+                    <div>
+                    <p>أضافة عميل جديد</p>
+                   </div>
+                   <div class="image">
+                    <img src="/image/peso.jpeg" alt="">
+                    <p>Linksoft</p>
+                   </div>
+                 </div>
+
+            <div class="coustmer_data">
+                <div class="add_custmer_text">
+                    <i class="fa-solid fa-user-plus"></i>
+                    اضافة عميل جديد 
+                </div>
+
+                <input type="text"   class="full" id="coustmer_name" placeholder="اسم العميل">
+                <input type="number" class="full" id="coustmer_phone" placeholder="هاتف">
+                <input onkeyup="get_Rem_Amount()" type="number" id="coustmer_total" placeholder="المبلغ">
+                <input onkeyup="get_Rem_Amount()" type="number" id="coustmer_deposit" placeholder="المدفوع">
+                <div class="Rem_Amount">
+                    <i class="fa-solid fa-money-bills"></i>
+                    <div id="rem_click">
+                      <div>باقي</div>
+                      <small id="Rem_Amount">0.00</small>
+                    </div>
+                </div>
+                <input type="text" name="note" id="note" placeholder="ملاحظات">
+                <div class="submit full" id="submit" placeholder="حفظ">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    حفظ
+                </div>
+            </div>
+
+            <div class="report ttabel">
+                <table>
+                 <thead>
+                     <tr>
+                         <th>م</th>
+                         <th>العميل</th>
+                         <th>تلفون</th>
+                         <th>المبلغ</th>
+                         <th>المدفوع</th>
+                         <th>الباقي</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="table_coustmer">
+                    </tbody>
+                </table>
+            </div>
+                
+            </div>
+            </div>
+    </div>
+    <script src="/index.js"></script>    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_div">
+         <div class="nav_bar">
+      
+             <div class="icon_links">
+            <a href="/index.html" class="box">
+                <i class="fa-regular fa-house"></i>
+            </a>
+
+            <a href="/add_coustmer.html" class="box">
+                <i class="fa-solid fa-user-plus"></i>
+            </a>
+                    <a href="/visit.html" class="box">
+                    <i class="fa-solid fa-briefcase"></i>
+                </a>
+                <a href="/collection.html" class="box">
+                    <i class="fa-regular fa-calendar-days"></i>
+                </a>
+                <a href="#" class="box">
+                    <i class="fa-regular fa-calendar-plus"></i>
+                </a>
+                <a href="#" class="box">
+                    <i class="fa-solid fa-vault"></i>
+                </a>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="content">
+            <div class="container">
+              <div class="header">
+                    <div>
+                    <p>حافز</p>
+                   </div>
+                   <div class="image">
+                    <img src="/image/peso.jpeg" alt="">
+                   </div>
+                </div>
+
+                    <div class="searchdate">
+                    <input type="date" id="dateSearch" hidden onchange="searchData(this.value)">
+                    <i class="fa-solid fa-calendar" onclick="dateSearch.showPicker()"></i> 
+                    <P onclick="dateSearch.showPicker()" id="valuedate">بحث</P>
+                    </div>         
+                                
+            <div class="report ttabel">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>العميل</th>
+                            <th>الهاتف</th>
+                            <th>المبلغ</th>
+                            <th>الحافز</th>
+                            <th>اليوم</th>
+                         </tr>
+                    </thead>
+                    
+                    <tbody class="tabel_show"  id="bouns_view">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+         </div>
+    </div>
+    <script src="/bouns_view.js"></script>
+</body>
+</html>
