@@ -17,7 +17,7 @@
                     <i class="fa-regular fa-house"></i>
                 </a>
 
-                <a href="/add_coustmer.html" class="box active">
+                <a href="/add_coustmer.html" class="box">
                     <i class="fa-solid fa-user-plus"></i>
                 </a>
 
@@ -33,7 +33,7 @@
                     <i class="fa-regular fa-calendar-plus"></i>
                 </a>
 
-                <a href="/saves.html" class="box">
+                <a href="/saves.html" class="box active">
                     <i class="fa-solid fa-vault"></i>
                 </a>
 
@@ -46,52 +46,93 @@
 
                 <div class="header">
                     <div>
-                    <p>أضافة عميل جديد</p>
+                    <p>الخزنة</p>
                    </div>
                    <div class="image">
                     <img src="/image/peso.jpeg" alt="">
-                    <p>Linksoft</p>
                    </div>
                  </div>
 
-            <div class="coustmer_data">
-                <div class="add_custmer_text">
-                    <i class="fa-solid fa-user-plus"></i>
-                    اضافة عميل جديد 
-                </div>
-
-                <input type="text"   class="full" id="coustmer_name" placeholder="اسم العميل">
-                <input type="number" class="full" id="coustmer_phone" placeholder="هاتف">
-                <input onkeyup="get_Rem_Amount()" type="number" id="coustmer_total" placeholder="المبلغ">
-                <input onkeyup="get_Rem_Amount()" type="number" id="coustmer_deposit" placeholder="المدفوع">
-                <div class="Rem_Amount">
-                    <i class="fa-solid fa-money-bills"></i>
-                    <div id="rem_click">
-                      <div>باقي</div>
-                      <small id="Rem_Amount">0.00</small>
+            <div class="data_safes">
+                
+                <a href="safes/safe_main.html" class="safe main">
+                    <i class="fa-solid fa-vault"></i>
+                    <div class="data">
+                        <h3>الرئيسية</h3>
+                        <p>6500</p>
                     </div>
-                </div>
-                <input type="text" name="note" id="note" placeholder="ملاحظات">
-                <div class="submit full" id="submit" placeholder="حفظ">
-                    <i class="fa-solid fa-floppy-disk"></i>
-                    حفظ
-                </div>
+                </a>
+
+                
+                <a href="safes/safe_today.html" class="safe today">
+                <i class="fa-solid fa-vault"></i>
+                    <div class="data">
+                        <h3>اليوم</h3>
+                        <p>1500</p>
+                    </div>
+                </a>
+
+
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div class="report ttabel">
                 <table>
                  <thead>
                      <tr>
                          <th>م</th>
-                         <th>العميل</th>
-                         <th>تلفون</th>
-                         <th>المبلغ</th>
-                         <th>المدفوع</th>
-                         <th>الباقي</th>
+                         <th>العملية</th>
+                         <th>القيمة</th>
+                         <th>البيان</th>
+                         <th>الملاحظات</th>
                         </tr>
                     </thead>
 
-                    <tbody id="table_coustmer">
+                    <tbody id="table_safe">
                     </tbody>
                 </table>
             </div>

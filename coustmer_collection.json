@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "name": "ايهاب حمودة",
+    "phone": "01012345678",
+    "amount": 350,
+    "collected": true
+  },
+  {
+    "id": 2,
+    "name": "هبة محمود",
+    "phone": "01198765432",
+    "amount": 250,
+    "collected": false
+  },
+  {
+    "id": 3,
+    "name": "كحيل",
+    "phone": "01012345678",
+    "amount": 300,
+    "collected": true
+  },
+  {
+    "id": 4,
+    "name": "بيتزا بوب",
+    "phone": "01198765432",
+    "amount": 150,
+    "collected": false
+  },
+  {
+    "id": 5,
+    "name": "طيبة للمقاولات",
+    "phone": "01198765432",
+    "amount": 250,
+    "collected": false
+  },
+  {
+    "id": 6,
+    "name": "شيرين ميكي",
+    "phone": "01198765432",
+    "amount": 150,
+    "collected": false
+  },
+  {
+    "id": 6,
+    "name": "شيرين ميكي",
+    "phone": "01198765432",
+    "amount": 150,
+    "collected": false
+  }
+
+]
+

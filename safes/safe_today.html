@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="main_div">
+    <div class="nav_bar">
+      
+             <div class="icon_links">
+               <a href="/index.html" class="box">
+                 <i class="fa-regular fa-house"></i>
+                </a>
+                
+                <a href="/add_coustmer.html" class="box">
+                  <i class="fa-solid fa-user-plus"></i>
+                </a>
+                    <a href="/visit.html" class="box">
+                      <i class="fa-solid fa-briefcase"></i>
+                    </a>
+                    <a href="/collection.html" class="box">
+                      <i class="fa-regular fa-calendar-days"></i>
+                    </a>
+                    <a href="#" class="box">
+                      <i class="fa-regular fa-calendar-plus"></i>
+                    </a>
+                    <a href="/saves.html" class="box active">
+                      <i class="fa-solid fa-vault"></i>
+                    </a>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+
+                
+                
+                <div class="content">
+            <div class="container">
+              <div class="header">
+                    <div>
+                    <p>اليوم</p>
+                  </div>
+                  <div class="image">
+                    <img src="/image/peso.jpeg" alt="">
+                  </div>
+                </div>
+
+
+
+
+                    <div class="safe_today">
+                      
+                      <div class="data_input">
+
+                      <div class="transactionType">
+                        <select id="transactionType">
+                        <option>العملية</option>
+                        <option>سحب</option>
+                        <option>ايداع</option>
+                        <option>سداد</option>
+                        <option>تحصيل</option>
+                        <option>مصروف</option>
+                      </select>
+                      </div>
+
+                    <div class="input_data">
+                      <input id="inp" type="number" placeholder="المبلغ">
+                      <input id="opr" type="text" placeholder="البيان">
+                      <input id="note" type="text" placeholder="الملاحظات">
+                    </div>
+
+                    <button id="submit">حفظ</button>
+                    
+                  </div>
+
+                  <input type="search" placeholder="search">
+                
+                    <div class="tabel_save_to_day">
+                      <table>
+                  <thead>
+                    <tr>
+                      <th>اليوم</th>
+                      <th>العملية</th>
+                      <th>المبلغ</th>
+                      <th>الرصيد</th>
+                      <th>البيان</th>
+                      <th>ملاحظات</th>
+                    </tr>
+                  </thead>
+
+                  <tbody id="table_save_to_day">
+                 
+                  </tbody>
+                </table>
+                    </div>
+
+
+                  
+                </div>         
+                    </div>         
+                  </div>         
+    
+       <script src="/savetoday.js"></script>
+</body>
+</html>

@@ -62,6 +62,18 @@ img{
     width: 100%;
 }
 
+nav{
+    width: 99%;
+    background-image: linear-gradient(to bottom,#012066, #2a75ee);
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 6px;
+}
+nav div{
+    width: 40%;
+    color: white;
+}
 
 /* gelobal */
 
@@ -157,8 +169,8 @@ img{
 }
 input[type="search"]{
    background-image: linear-gradient(to bottom,#012066, #2a75ee);
-   margin-bottom: 7px;
    color: white;
+   width: 100%;
 }
 
 .main_div .content .ttabel{
@@ -219,6 +231,7 @@ td{
 td a{
     color: white;
 }
+tr.activew{background-color: rgb(49, 153, 7);}
 
 
 
@@ -385,3 +398,109 @@ td a{
 
 }
 /* Bouns */
+
+/* safes */
+.data_safes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+.data_safes .safe{
+    width: 40%;
+    background-color:#022050;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: white;
+}
+
+/* safes */
+
+/* safes_today */
+.data_input{
+background-color: #0037b6;
+
+ display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+padding: 5px;
+margin-bottom: 7px;
+}
+.transactionType{width: 100%;
+    
+
+}
+#transactionType{
+border-radius: 5px;
+border: none;
+float: right;
+width: 100%;
+padding: 10px;
+margin-bottom: 5px;
+background-color:#022050;
+color: white;
+}
+.input_data input[type="number"]{
+width: 93%;
+margin-bottom: 5px;
+
+}
+.input_data input{
+width: 93%;
+margin-bottom: 5px;
+background-color:#011d4bce;
+color: white;
+}
+
+.data_input button{
+    width: 100%;
+    padding: 8px 40px ;
+    border-radius: 5px;
+    border: none;
+    background-color:#022050;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tabel_save_to_day{
+     max-height: 380px;
+    overflow-y: auto;
+}
+
+.tabel_save_to_day input{
+    height: 1px;
+    background-color: transparent;
+}
+
+.money-minus{
+    color: red;
+    font-weight: bold;
+}
+
+.money-plus{
+    color: rgb(6, 240, 6);
+    font-weight: bold;
+
+}
+
+textarea {
+    width: 100%;
+    min-height: 1px;
+    background: transparent;
+    color: white;
+    border: 1px solid #555;
+    outline: none;
+    border: none;
+    resize: vertical;
+    box-sizing: border-box;
+    line-height: .77;
+}
+
+/* safes_today */
+

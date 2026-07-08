@@ -28,7 +28,7 @@
                 <a href="#" class="box">
                     <i class="fa-regular fa-calendar-plus"></i>
                 </a>
-                <a href="#" class="box">
+                <a href="/saves.html" class="box">
                     <i class="fa-solid fa-vault"></i>
                 </a>
 
@@ -96,7 +96,17 @@
 
             </div>
             
-            <input onkeyup="searchData(this.value)" type="search" class="search" id="search" placeholder="search">
+             <nav class="inp_search" style="display: flex; align-items: center;">
+               
+                <input onkeyup="searchData(this.value)" type="search" class="search" id="search" placeholder="search">
+                
+                <div>
+                <input type="date" id="inputsearch" hidden onchange="searchData(this.value)">
+                <i class="fa-solid fa-calendar" onclick="inputsearch.showPicker()"></i>
+                </div>
+            </nav>
+            
+            
             <div class="report ttabel">
                 <table>
                     <thead>
