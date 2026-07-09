@@ -3,138 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/all.min.css">
+    <link rel="stylesheet" href="/css/login.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="main_div">
-         <div class="nav_bar">
-      
-             <div class="icon_links">
-            <a href="/index.html" class="box active">
-                <i class="fa-regular fa-house"></i>
-            </a>
-
-            <a href="/add_coustmer.html" class="box">
-                <i class="fa-solid fa-user-plus"></i>
-            </a>
-                    <a href="/visit.html" class="box">
-                    <i class="fa-solid fa-briefcase"></i>
-                </a>
-                <a href="/collection.html" class="box">
-                    <i class="fa-regular fa-calendar-days"></i>
-                </a>
-                <a href="#" class="box">
-                    <i class="fa-regular fa-calendar-plus"></i>
-                </a>
-                <a href="/saves.html" class="box">
-                    <i class="fa-solid fa-vault"></i>
-                </a>
-
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-        <div class="content">
-            <div class="container">
-              <div class="header">
-                    <div>
-                    <p>الرئيسية</p>
-                   </div>
-                   <div class="image">
-                    <img src="/image/peso.jpeg" alt="">
-                    <p>Linksoft</p>
-                   </div>
-                </div>
-
-            <div class="info">
-
-                <a href="" class="box">
-                        <div class="content">
-                            <i class="fa-solid fa-users" style="background-color: #15a5b6;" ></i>
-                            <p>العملاء</p>
-                        </div>
-                        <h2 id="count_coustmer">15</h2>
-                </a>
-
-                <a href="" class="box">
-                        <div class="content">
-                            <i class="fa-solid fa-money-bill"></i>
-                            <p>المبلغ</p>
-                        </div>
-                        <h2 id="price_coustmer">56000</h2>
-                </a>
-
-                <a href="/data_home/bouns_view.html" class="box">
-                    <div class="content">
-                        <i class="fa-solid fa-wallet" style="color: rgb(8, 185, 8); background-color: rgba(13, 139, 13, 0.336);" ></i>
-                        <p>الحافز</p>
-                    </div>
-                    <h2 id="Bonus">0</h2>
-                </a>
-
-               <a href="/data_home/visit_view.html" class="box">
-                    <div class="content">
-                        <i class="fa-solid fa-briefcase" style="color: #ff0077; background-color:#ff007741;""></i>
-                        <p>الزيارات</p>
-                    </div>
-                    <div style="display: flex; justify-content: space-around;" >
-                        <h2 id="visit_price">160</h2>
-                        <h2 id="visit_coustmer">26</h2>
-                    </div>
-                </a>
-
-            </div>
-            
-             <nav class="inp_search" style="display: flex; align-items: center;">
-               
-                <input onkeyup="searchData(this.value)" type="search" class="search" id="search" placeholder="search">
-                
-                <div>
-                <input type="date" id="inputsearch" hidden onchange="searchData(this.value)">
-                <i class="fa-solid fa-calendar" onclick="inputsearch.showPicker()"></i>
-                </div>
-            </nav>
-            
-            
-            <div class="report ttabel">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>العميل</th>
-                            <th>المبلغ</th>
-                            <th>المتبقي</th>
-                            <th>الحافز</th>
-                            <th>ملاحظات</th>
-                            <th>حذف</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tabel_coustmer_all">
-                        <tr>
-                            <td style="display: flex; justify-content: space-between; width: 60px;"><a href="tel:01012345678"><i class="fa-solid fa-phone"></i></a>احمد علي</td>
-                            <td>25000</td>
-                            <td style="color: #ff1865;">25000</td>
-                            <td style="color: rgb(22, 211, 22);">25000</td>
-                            <td>25000</td>
-                              <td><i class="fa-solid fa-trash" style="color: #ff1865;"></i></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-         </div>
-    </div>
     
-    <script src="/index.js"></script>
+    <div class="login_Page">
+        <div class="logo">
+
+            <div class="content">
+
+                <img src="/image/Screenshot 2026-07-09 053851.png" alt="">
+
+                <div class="text">
+                    <h2>Collection <span>Manager</span></h2>
+                    <p>manage your customers and collections in an easy and efficient way</p>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="login">
+            <div class="container">
+
+                <div class="header">
+
+                  <i class="fa-solid fa-lock"></i>
+
+                   <div class="text">
+                    <h2>Welcome Back</h2>
+                    <p>Please sign in to Your Account</p>
+                   </div>
+
+                </div>
+
+                    <form action="">
+                        <input class="input" type="text" placeholder="Enter your username">
+                        <input class="input" type="password" placeholder="Enter your password">
+
+                        <div class="remermber_forgot">
+                        <div class="remermber">
+                        <input type="checkbox">
+                        <span>Remermber me</span>
+                        </div>
+                        <div class="forgot">
+                            <a href="">Forgot password?</a>
+                        </div>
+                    </div>
+                        <button> <i class="fa-solid fa-arrow-right-to-bracket"></i> Sign in</button>
+                    </form>
+                    <p></p>
+                    <div class="google"><img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" width="20"height="20">sign in with Google </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
