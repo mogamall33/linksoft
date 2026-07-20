@@ -31,8 +31,8 @@
 
 
 
-
-        <div class="login">
+ 
+        <div class="login active">
             <div class="container">
 
                 <div class="header">
@@ -41,30 +41,63 @@
 
                    <div class="text">
                     <h2>Welcome Back</h2>
-                    <p>Please sign in to Your Account</p>
+                    <p class="msg">Please sign in to Your Account</p>
                    </div>
 
                 </div>
 
                     <form action="">
-                        <input class="input" type="text" placeholder="Enter your username">
-                        <input class="input" type="password" placeholder="Enter your password">
+                        <input id="username" class="input" type="text" placeholder="اسم المستخدم">
+                        <input id="password" class="input" type="password" placeholder="كلمة المرور">
 
                         <div class="remermber_forgot">
                         <div class="remermber">
-                        <input type="checkbox">
-                        <span>Remermber me</span>
+                        <input id="checkbox" type="checkbox" >
+                        <span>تذكرني</span>
                         </div>
                         <div class="forgot">
-                            <a href="">Forgot password?</a>
+                            <a href="">نسيت كلمة المرور؟</a>
                         </div>
                     </div>
-                        <button> <i class="fa-solid fa-arrow-right-to-bracket"></i> Sign in</button>
+                        <button type="button" id="send"><i class="fa-solid fa-arrow-right-to-bracket"></i> تسجيل الدخول</button>
                     </form>
+                    <button type="button" id="trans_signup"><i class="fa-solid fa-user-plus"></i> سجل حساب</button>
                     <p></p>
-                    <div class="google"><img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" width="20"height="20">sign in with Google </div>
+                    <div class="google"><img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" width="20"height="20">سجل عن طريق جوجل </div>
+            </div>
+        </div>
+ 
+
+
+
+
+
+        <div class="signup">
+            <div class="container">
+            <i id="logo_icon" class="fa-solid fa-user-plus"></i>
+            <div class="header">
+                   <div class="text">
+                    <h2>Create <span>Account</span></h2>
+                    <p>Please sign up to get started</p>
+                   </div>
+
+                </div>
+
+                <div class="inputs">
+                    <input id="signup_fullname" type="text" placeholder="الاسم كامل">
+                    <input id="signup_userName" type="text" placeholder="اسم المستخدم">
+                    <input id="signup_email" type="email" placeholder="حساب الاميل">
+                    <input id="signup_password" type="password" placeholder="كلمة المرور">
+                    <input id="signup_conf_password" type="password" placeholder="تاكيد كلمة المرور">
+                </div>
+                <div class="checkbox"> <input type="checkbox">انا اوافق</div>
+                <button type="button" id="signup_btn"><i class="fa-solid fa-user-plus"></i>انشاء حساب</button>
+
+                <p class="signin">هل لديك حساب؟ <span id="signin_btn">سجل دخول</span></p>
+                
             </div>
         </div>
     </div>
+    <script src="login.js"></script>
 </body>
 </html>

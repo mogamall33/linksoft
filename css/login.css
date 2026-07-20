@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
 .logo{
@@ -37,7 +39,7 @@
     font-weight: normal;
     text-align:center;
 }
-.login_Page .text h2{
+.login .text h2{
     margin-bottom: 8px;
 }
 .login_Page .text h2 span{
@@ -51,12 +53,17 @@
 
 
 .login{
+    width: 100%;
     background-color: white;
-    height: 70%;
+    height: 68%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(105%);
+    transition: transform .4s ease;
 }
 
 .login_Page .container{
@@ -80,7 +87,7 @@
 
 .login .header .text{
     color: black;
-    max-width: 300px;
+    max-width: 335px;
 }
 .login .header .text h2{
     font-size: 20px;
@@ -98,6 +105,18 @@ form .input{
     border:1px solid #6e6e6e38 ;
     outline: none;
     border-radius: 8px;
+}
+
+form .input::before{
+    content: "ff";
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+
+
+form .input:hover{
+    border: 1px solid #4967ef;
 }
 
 .remermber_forgot{
@@ -159,4 +178,87 @@ form p::after{
 }
 .google img{
     margin-right: 10px;
+}
+
+
+
+
+.signup{
+    width: 100%;
+    background-color: white;
+    height: 66%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(105%);
+    transition: transform .4s ease;
+    
+}
+.signup .header{
+    text-align: center;
+    margin: 10px 0;
+    position: relative;
+}
+
+.signup #logo_icon{
+    width: 50px;
+    height: 50px;
+    color: #4b6df7;
+    background-color: #f4f6fb;
+    border-radius: 50%;
+    font-size: 25px;
+    line-height: 1.8;
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+
+
+.signup .header .text{
+    margin: 25px auto 0;
+    color: black;
+    min-width: 335px;
+    
+}
+
+.signup .header p{
+    color: #6e747e;
+    margin: 6px 0;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.inputs input{
+      width: 100%;
+    margin: 8px 0;
+    padding:10px 15px;
+    border: none;
+    border:1px solid #6e6e6e38 ;
+    outline: none;
+    border-radius: 8px;
+}
+
+.signup .checkbox>input{
+    margin: 0 10px;
+}
+
+.signup .signin{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.signup .signin span,.msg p{
+    color: #4967ef;
+    font-weight: bold;
+}
+
+
+ .active{
+ transform: translateY(0);
+
 }

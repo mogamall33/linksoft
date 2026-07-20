@@ -3,6 +3,7 @@ let count_coustmer=document.getElementById("count_coustmer")
 let price_coustmer=document.getElementById("price_coustmer")
 let Bonus=document.getElementById("Bonus")
 let search=document.getElementById("search")
+let logout=document.getElementById("logout")
 // Home data
 
 // add_coustmer_data
@@ -15,6 +16,14 @@ let note=document.getElementById("note")
 let submit=document.getElementById("submit")
 let rem_click=document.getElementById("rem_click")
 // add_coustmer_data
+
+if (logout) {
+    logout.onclick=function(){
+    location.href="index.html"
+}
+
+}
+
 
 if (rem_click) {
     rem_click.onclick=function(){
