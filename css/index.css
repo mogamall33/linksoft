@@ -18,7 +18,7 @@ a{
 }
 .active{
         background-image: linear-gradient(to bottom,#0037b6,#012363ed);
-
+        flex-basis: 110px;
 }
 .checked{
     background-color: rgba(153, 255, 0, 0.253);
@@ -106,19 +106,30 @@ nav div{
 }
 .main_div .nav_bar .icon_links .box {
     width: 55px;
-    display: block;
     color: white;
     font-size: 10px;
     font-weight: bold;
-    padding: 10px 0 ;
+    padding: 10px 5px ;
     border-radius: 6px;
     margin: 0 2px ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    transition: .3s ease-in-out;
 }
 
 
 .main_div .nav_bar .icon_links .box i{
     font-size: 25px;
     margin:5px 0;
+}
+.main_div .nav_bar .icon_links .box p{
+   display: none;
+}
+.main_div .nav_bar .icon_links .box.active p{
+   display: block;
+   font-size: 15px;
 }
 
 .main_div .content .info{
